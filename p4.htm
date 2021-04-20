@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2> ENTER THE FLOAT VALUES </h2>
+<p id = "good"></p>
+<input type="text" id="sad1" onchange="guy()"><br><br>
+<input type="text" id="sad2" onchange="guy()">
+
+<script>
+function guy()
+{
+
+var x = document.getElementById("sad1").value;
+var y = document.getElementById("sad2").value;
+var z = parseFloat(x) * parseFloat(y);
+document.getElementById("good").innerHTML="MULTIPLICATION OF X AND Y<br>" + z;
+}
+</script>
+</body>
+</html>

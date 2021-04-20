@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<body>
+<p id = "good"></p>
+<p id = "good1"></p>
+<button type ="button" onclick="ass()">click me!</button>
+
+<script>
+function ass()
+{ 
+var x= "very bad";
+x=x.toUpperCase();
+var y= x.length;
+var i;
+for(i=0;i<y;i++)
+		{
+		z=x.charCodeAt(i);
+console.log(x[i],x.charCodeAt(i));
+		document.getElementById("good").innerHTML = document.getElementById("good").innerHTML + '<br>' + x[i] + ',' + z;
+		
+//document.getElementById("good1").innerHTML = z;
+}
+}
+
+		
+</script>
+</body>
+</html>
